@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Mala Shop",
-  description: "Welcome to Mala Shop",
+  title: "Change Password",
+  description: "Please enter your new password",
 };
 
 export default function RootLayout({
@@ -12,10 +11,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
+    
+      <>
         {children}
-      </body>
-    </html>
+      </>
+
   );
 }
