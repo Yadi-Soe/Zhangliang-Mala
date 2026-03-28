@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { defaultLoginRoutePath } from "@/lib/constants";
+import logo from "@/public/logo.svg";
 
 
 export default function Register() {
@@ -11,7 +12,7 @@ export default function Register() {
       <main className="flex min-h-screen w-full max-w-4xl flex-col items-center px-16 bg-gray-600 dark:bg-black">
         <Image
           className="dark:invert"
-          src="logo.svg"
+          src={logo}
           alt="Mala Shop logo"
           width={50}
           height={10}

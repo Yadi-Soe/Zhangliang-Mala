@@ -1,8 +1,8 @@
+"use client";
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
-import Link from "next/link";
-
 
 export default function Home() {
   return (
@@ -20,31 +20,46 @@ export default function Home() {
           <CardHeader>
             <CardTitle
               className="text-4xl text-white"
-              >Forget Password!</CardTitle>
+              >Reset Password</CardTitle>
             <CardDescription 
               className="text-xl">
-              Please fill your email below and we will send you an OTP to reset your password
+                Enter your new password below to reset your password````
             </CardDescription>
           </CardHeader>
           <CardContent className="w-full mt-5">
             <form className="w-full flex flex-col gap-5">
-              <div className="flex flex-col gap-3">
-                <label htmlFor="email" className="text-xl text-white font-medium">
-                  Email
+              
+              <div className="flex flex-col gap-3 mt-5">
+                <label htmlFor="password" className="text-xl text-white font-medium">
+                  Password
                 </label>
                 <input
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email"
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
                   className="w-full border bg-zinc-800 border-none text-gray-400 px-5 py-4 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
 
-              <Link href="/register/forgetPassword/otpCode"
+              <div className="flex flex-col gap-3 mt-5">
+                <label htmlFor="confirmPassword" className="text-xl text-white font-medium">
+                  Confirm Password
+                </label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  placeholder="Confirm your password"
+                  className="w-full border bg-zinc-800 border-none text-gray-400 px-5 py-4 text-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+
+              <button
                 type="submit"
-                className="w-full flex justify-center font-bold bg-[#EC6C00] px-3 py-5 mt-5 text-black text-2xl hover:bg-[#D45A00] focus:outline-none focus:ring-2 focus:ring-[#EC6C00] focus:ring-offset-2">
-                Next
-              </Link>
+                className="w-full font-bold bg-[#EC6C00] px-3 py-5 mt-10 text-black text-2xl hover:bg-[#D45A00] focus:outline-none focus:ring-2 focus:ring-[#EC6C00] focus:ring-offset-2">
+                Done
+              </button>
+
+              
             </form>
           </CardContent>
         </Card>
