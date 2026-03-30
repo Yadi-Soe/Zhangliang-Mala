@@ -1,4 +1,4 @@
-import ResetPassword from "@/modules/components/auth/Reset"
+import ResetPassword from "@/modules/auth/components/Reset"
 
 function page() {
   return (

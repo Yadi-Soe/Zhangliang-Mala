@@ -1,4 +1,4 @@
-import OtpPage from "@/modules/components/auth/Otp"
+import OtpPage from "@/modules/auth/components/Otp"
 
 
 function page() {

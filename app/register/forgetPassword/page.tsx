@@ -1,4 +1,4 @@
-import ForgetPassword from "@/modules/components/auth/Forget"
+import ForgetPassword from "@/modules/auth/components/Forget"
 
 
 function page() {
