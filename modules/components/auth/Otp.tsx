@@ -32,12 +32,8 @@ export default function OtpPage() {
             <form className="w-full flex flex-col gap-5">
              
               <div className="flex gap-10 justify-center">
-                <input type="text" maxLength={1} className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
-                <input type="text" maxLength={1} className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
-                <input type="text" maxLength={1} className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
-                <input type="text" maxLength={1} className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
-                <input type="text" maxLength={1} className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
-                <input type="text" maxLength={1} className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
+                <input type="text" maxLength={6} className="w-full h-15 text-center text-xl border bg-gray-400 border-gray-300" />
+               
               </div>
 
               <div className="flex items-center justify-between gap-2 py-5">
