@@ -4,6 +4,7 @@ import {
   Utensils,
   ChartBarStacked,
   Users,
+  ReceiptText,
 } from "lucide-react";
 import ModuleLink from "./ModuleLink";
 
@@ -17,6 +18,16 @@ export default function ModuleLinkList() {
           icon: <ShoppingCart />,
           title: "Sale",
           href: "/dashboard/sale?limit=100",
+        },
+        {
+          icon: <ReceiptText />,
+          title: "Sale Voucher",
+          href: "#",
+        },
+        {
+          icon: <ReceiptText />,
+          title: "Banner",
+          href: "#",
         },
       ],
     },
@@ -48,12 +59,17 @@ export default function ModuleLinkList() {
           title: "Profile  Information",
           href: "/dashboard/profile-information",
         },
+        {
+          icon: <UserCircle />,
+          title: "Brand Information",
+          href: "#",
+        },
       ],
     },
   ];
 
   return (
-    <section className="flex flex-col gap-8 w-full px-5 bg-gray-700 min-h-screen py-10">
+    <section className="flex flex-col gap-8 w-full px-5 bg-gray-900 min-h-screen py-10">
       {moduleLinks.map(({ groupTitle, modules }, index) => (
         <div key={`module-group-${index}`}>
           <h4 className="text-white text-2xl text-bold mb-3">{groupTitle}</h4>

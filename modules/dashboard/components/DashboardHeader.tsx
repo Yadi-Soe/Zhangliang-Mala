@@ -20,11 +20,17 @@ function DashboardHeader() {
             src={logo}
             alt="Profile Picture"
           />
-          <div className="flex gap-1 items-center flex-col">
+          <div className='flex flex-row items-center gap-10'>
+            <div className="flex gap-1 items-center flex-col">
             <h5 className=" font-semibold text-white">name</h5>
             <p className=" text-sm text-muted-foreground">email</p>
           </div>
-          <LogoutBtn />
+          <div>
+             <LogoutBtn />
+          </div>
+          </div>
+          
+         
         </div>
         </div>
     </header>
